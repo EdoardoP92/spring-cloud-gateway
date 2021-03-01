@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "custom.property",
+  "type": "java.lang.String",
+  "description": "poc spel in yaml file"
+}]}

@@ -1,12 +1,15 @@
 
 server:
-  port: 8099
+  port: 8090
+  
+custom:
+  property: "#{T(reactive.proxy.properties.PropertyGetter).getProperty('custom_property')?:'defaultValue'}"
   
 #spring:
 #  cloud:
 #    gateway:
 #      routes:
 #      - id: dummy-route
-#        uri: "#{T(reactive.proxy.properties.PropertyGetter).getProperty('xxx')?:'http://localhost:8090/'}"
+#        uri: http://localhost:8080
 #        predicates:
 #        - Path=/dummy/**
